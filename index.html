@@ -7,8 +7,22 @@
 </head>
 <body>
  <h1>What's the weather in your area?</h1>
-<form method="get" action="">
-    Zip Code:<input type="text">
-</form>
+    <form>
+        Zip Code:<input type="text">
+        <button type="button">Lets find out!</button>
+    </form>
+    <div id="summary">
+        <!-- TODO - output response data from the ajax request -->
+    </div>
 </body>
 </html>
+
+<script type="javascript">
+    // http://api.wunderground.com/api/fd224e6455965f54/features/settings/q/query.format
+    Weather = Weather || {
+        wundergroundBaseUrl: 'http://api.wunderground.com/api/fd224e6455965f54/',
+        onClickZip: function() {
+            // TODO - create ajax request with features = conditions, query = zipcode value, format = json
+        }
+    };
+</script>
